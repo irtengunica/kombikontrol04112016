@@ -1,0 +1,124 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="top|center"
+        android:orientation="vertical" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kombi Ayarla"
+            android:id="@+id/ayarlarbtn"
+            />
+        <TextView
+                android:id="@+id/cihazad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Cihaz Adı:"
+                android:textSize="20dp" />
+
+        <TextView
+                android:id="@+id/cihazID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Cihaz ID:"
+                android:textSize="20dp"/>
+        <TextView
+                android:id="@+id/simdikiderece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Ev Sıcaklığı:"
+                android:textSize="20dp"/>
+         <TextView
+                android:id="@+id/ayarsicaklik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Ayarlanan Sıcaklık:"
+                android:textSize="20dp"/>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Değiştir"
+            android:id="@+id/anlikbtn"
+            />
+        <TextView
+                android:id="@+id/kombidurumu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Kombi Durumu:"
+                android:textSize="20dp"/>
+        <TextView
+                android:id="@+id/simdikisaat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Şimdiki Saat:"
+                android:textSize="20dp"
+                android:visibility="gone" />
+        <TextView
+                android:id="@+id/guntarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Güncelleme Kontrol:"
+                android:textSize="20dp"/>
+        <TextView
+                android:id="@+id/cihazip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Cihaz IP:"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/mesaj1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="20dp"/>
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="189dp"
+                android:id="@+id/kombiresim"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
